@@ -153,3 +153,98 @@ img {
     display: grid;
     gap: 1.5rem;
 }
+
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+
+}
+
+
+/* NAVBAR */
+
+.nav {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo , .navToggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.navLogo:hover {
+    color: var(--first-color);
+}
+
+.navToggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.navToggle:hover {
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 767px) {
+    .navMenu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+}
+
+.navList {
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.navLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.navLink:hover {
+    color: var(--first-color);
+}
+
+.navIcon {
+    font-size: 1.2rem;
+}
+
+
+.navClose {
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.navClose:hover {
+    color: var(--first-color-alt);
+}
+
+/* SHOW MENU */
+
+.show-menu {
+    bottom: 0;
+}
