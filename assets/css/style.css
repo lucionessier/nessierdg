@@ -248,3 +248,45 @@ img {
 .show-menu {
     bottom: 0;
 }
+
+
+/* HOME */
+
+.homeContainer {
+    gap: 1rem;
+}
+
+.homeContent {
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.homeSocial {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.homeSocialIcon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.homeSocialIcon:hover {
+    color: var(--first-color-alt);
+}
+
+.homeBlob {
+    width: 200px;
+    fill: var(--first-color);
+}
+
+/* Codigo que falta d eminuto 28 y minuto 33 */
+.homeBlobImg {
+    width: 170px;
+}
+
+.homeData {
+    grid-column: 1/3;
+}
