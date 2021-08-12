@@ -30,3 +30,27 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+/* ACCORDION SKILLS */
+
+const skillsContent = document.getElementsByClassName('skillsContent'),
+      skillsHeader = document.querySelectorAll('.skillsHeader')
+
+
+function toggleSkills () {
+    let itemClass = this.parentNode.className;
+
+    for (i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = 'skillsContent skillsClose'
+    }
+
+    if (itemClass === 'skillsContent skillsClose') {
+        this.parentNode.className = 'skillsContent skillsOpen'
+    }
+    
+}
+
+skillsHeader.forEach((el) => {
+    el.addEventListener('click', toggleSkills)
+})

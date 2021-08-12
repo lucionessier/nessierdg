@@ -401,3 +401,115 @@ img {
     display: flex;
     justify-content: center;
 }
+
+/* SKILLS */
+
+.skillsContainer {
+    row-gap: 0;
+}
+
+.skillsHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skillsIcon , .skillsArrow {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skillsIcon {
+    margin-right: var(--mb-0-75);
+}
+
+.skillsTitle {
+    font-size: var(--h3-font-size);
+}
+
+.skillsSubTitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skillsArrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skillsList {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skillsTitles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skillsName {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skillsBar , .skillsPercentage {
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skillsBar {
+    background-color: var(--first-color-lighter);
+}
+
+.skillsPercentage {
+    display: block;
+    background-color: var(--first-color);
+}
+
+.skillsHtml {
+    width: 70%;
+}
+
+.skillsCss {
+    width: 70%;
+}
+
+.skillsJs {
+    width: 50%;
+}
+
+.skillsReact {
+    width: 30%;
+}
+
+.skillsIllustrator {
+    width: 90%;
+}
+
+.skillsPhotoshop {
+    width: 30%;
+}
+
+.skillsXD {
+    width: 60%;
+}
+
+.skillsWordpress {
+    width: 80%;
+}
+
+.skillsClose .skillsList {
+    height: 0;
+    overflow: hidden;
+}
+
+.skillsOpen .skillsList {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skillsOpen .skillsArrow {
+    transform: rotate(-180deg);
+}
