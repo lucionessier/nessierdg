@@ -513,3 +513,77 @@ img {
 .skillsOpen .skillsArrow {
     transform: rotate(-180deg);
 }
+
+
+/* QUALIFICATIONS SECTION */
+
+.qualificationTabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-2);
+}
+
+.qualificationButton {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.qualificationButton:hover {
+    color: var(--first-color);
+}
+
+.qualificationIcon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.qualificationData {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualificationTitle {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qualificationSubTitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.qualificationCalendar {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.qualificationRounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.qualificationLine {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px)
+}
+
+.qualification[data-content] {
+    display: none;
+}
+
+.qualificationActive[data-content] {
+    display: block;
+}
+
+.qualificationButton .qualificationActive {
+    color: var(--first-color);
+}
