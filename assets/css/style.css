@@ -697,3 +697,11 @@ img {
     color: var(--first-color);
     margin-right: var(--mb-0-25);
 }
+
+
+/* ACTIVE MODAL STYLES */
+
+.activeModal {
+    opacity: 1;
+    visibility: visible;
+}
