@@ -120,6 +120,26 @@ img {
     height: auto;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid var(--first-color);
+    border-radius: 1rem;
+    background-color: var(--first-color);
+  }
+  
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+
 
 /* REUSABLE CSS CLASSES */
 
@@ -846,4 +866,61 @@ img {
     font-size: var(--normal-font-size);
     border: none;
     padding: .25rem .5rem .5rem 0;
+}
+
+/* FOOTER */
+
+.footer {
+    padding-top: 2rem;
+}
+
+.footerContainer {
+    row-gap: 3.5rem;
+}
+
+.footerBg {
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+}
+
+.footerTitle {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footerSubTitle {
+    font-size: var(--small-font-size);
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footerLink:hover {
+    color: var(--first-color-lighter);
+}
+
+.footerSocial {
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footerSocial:hover {
+    color: var(--first-color-lighter);
+}
+
+.footerCopy {
+    font-size: var(--smaller-font-size);
+    color: var(--first-color-lighter);
+    text-align: center;
+    margin-top: var(--mb-3);
+}
+
+.footerTitle,
+.footerSubTitle,
+.footerLink,
+.footerSocial {
+    color: #FFF;
 }
