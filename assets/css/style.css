@@ -769,3 +769,32 @@ img {
     outline: none;
 }
 
+/* HAVE PROJECTS? SECTION */
+
+.project {
+    text-align: center;
+}
+
+.projectBg {
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.projectTitle {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.projectDescription {
+    margin-bottom: var(--mb-1-5);
+}
+
+.projectTitle,
+.projectDescription {
+    color: #FFF;
+}
+
+.projectImg {
+    width: 232px;
+    justify-self: center;
+}
