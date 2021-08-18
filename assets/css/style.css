@@ -27,6 +27,8 @@
     --input-color: hsl(var(--hue-color), 40%, 80%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /* Fonts */
 
@@ -82,6 +84,38 @@
 
     }
 
+/* DARK THEME VARIABLES */
+
+body.dark-theme {
+    /* HSL COLOR MODE */
+    --first-color-second:hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+/* BUTTON DARK/LIGHT*/
+
+.navBtns {
+    display: flex;
+    align-items: center;
+}
+
+.changeTheme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.changeTheme:hover {
+    color: var(--first-color);
+}
+
 /* BASE */
 
 * {
@@ -123,26 +157,6 @@ img {
     width: 100%;
     height: auto;
 }
-
-/* Scrollbar */
-
-/* ::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border: 2px solid var(--first-color);
-    border-radius: 1rem;
-    background-color: var(--first-color);
-  }
-  
-  ::-webkit-scrollbar-thumb:window-inactive {
-    background-color: transparent;
-  }
-  
-  ::-webkit-scrollbar-track-piece {
-    background-color: transparent;
-  } */
 
 
 /* REUSABLE CSS CLASSES */
@@ -964,5 +978,105 @@ img {
     bottom: 5rem;
 }
 
-/* DARK THEME */
 
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid var(--first-color);
+    border-radius: 1rem;
+    background-color: var(--first-color);
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* FOR SMALL DEVICES */
+
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .navMenu {
+        padding: 2rem .25rem 4rem;
+    }
+
+    .navList {
+        column-gap: 0;
+    }
+
+    .homeContent {
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .homeBlob {
+        width: 200px;
+    }
+
+    .skillsTitle {
+        font-size: var(--normal-font-size);
+    }
+
+    .qualificationData {
+        gap: .5rem;
+    }
+
+    .servicesContainer {
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+
+    .servicesContent {
+        padding-right: 3.5rem;
+    }
+
+    .servicesModal {
+        padding: 0 .5rem;
+    }
+
+    .projectImg {
+        width: 200px;
+    }
+}
+
+
+/* MEDIUM DEVICES */
+
+@media screen and (min-width: 568px) {
+    
+    .homeContent {
+        grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .homeData {
+        grid-column: initial;
+    }
+
+    /* BLOB */
+    .homeImg {
+        order: 1;
+        justify-self: center;
+    }
+
+    .aboutContainer,
+    .skillsContainer,
+    .portfolioContent,
+    .projectContainer,
+    .contactContainer,
+    .footerContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualificationSections {
+        display: grid;
+        grid-template-columns: .6fr;
+    }
+}
