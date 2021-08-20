@@ -171,7 +171,7 @@ img {
 
 .sectionSubTitle {
     display: block;
-    font-size: var(--small-font-size);
+    font-size: 1.2rem;
     margin-bottom: var(--mb-3);
 }
 
@@ -260,7 +260,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--small-font-size);
+    font-size: var(--font-medium);
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -488,7 +488,7 @@ img {
 }
 
 .skillsSubTitle {
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     color: var(--text-color-light);
 }
 
@@ -658,14 +658,17 @@ img {
 .servicesContent {
     position: relative;
     background-color: var(--container-color);
-    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    padding: 2rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,.15);
     transition: .3s;
 }
 
 .servicesContent:hover {
-    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    box-shadow: 0 5px 5px rgba(0,0,0,.15);
 }
 
 .servicesIcon {
@@ -847,12 +850,13 @@ img {
 /* CONTACT */
 
 .contactContainer {
-    row-gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .contactInformation {
-    display: flex;
-    margin-bottom: var(--mb-2);
+    display: inline-flex;
+    justify-content: center;
+    margin: var(--mb-1-5);
 }
 
 .contactIcon {
@@ -871,26 +875,7 @@ img {
     color: var(--text-color-light);
 }
 
-.contactContent {
-    background-color: var(--input-color);
-    border-radius: .5rem;
-    padding: .75rem 1rem .25rem;
-}
 
-.contactLabel {
-    font-size: var(--smaller-font-size);
-    color: var(--title-color);
-}
-
-.contactInput {
-    width: 100%;
-    background-color: var(--input-color);
-    color: var(--text-color);
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    border: none;
-    padding: .25rem .5rem .5rem 0;
-}
 
 /* FOOTER */
 
@@ -1035,7 +1020,7 @@ img {
     }
 
     .servicesContent {
-        padding-right: 3.5rem;
+        padding-right: 2rem;
     }
 
     .servicesModal {
@@ -1070,7 +1055,6 @@ img {
     .skillsContainer,
     .portfolioContent,
     .projectContainer,
-    .contactContainer,
     .footerContainer {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1297,11 +1281,4 @@ img {
         bottom: -4.5rem;
     }
 
-    .contactForm {
-        width: 460px;
-    }
-
-    .contactInputs {
-        grid-template-columns: repeat(2,1fr);
-    }
 }
