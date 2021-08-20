@@ -173,6 +173,7 @@ img {
     display: block;
     font-size: 1.2rem;
     margin-bottom: var(--mb-3);
+    color: var(--first-color-lighter);
 }
 
 .sectionTitle , .sectionSubTitle {
@@ -400,6 +401,10 @@ img {
     transition: .3s;
 }
 
+#download-cv:hover {
+    transform: translateY(.25rem);
+}
+
 .button--flex {
     display: inline-flex;
     align-items: center;
@@ -459,6 +464,7 @@ img {
 .aboutButtons {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* SKILLS */
@@ -661,15 +667,9 @@ img {
     padding: 2rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
     transition: .3s;
-}
-
-.servicesContent:hover {
-    -webkit-transform: scale(1.03);
-    transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -o-transform: scale(1.03);
     box-shadow: 0 5px 5px rgba(0,0,0,.15);
 }
+
 
 .servicesIcon {
     display: block;
@@ -1156,7 +1156,7 @@ img {
     }
 
     .aboutButtons {
-        justify-content: initial;
+        justify-content: center;
     }
 
     .qualificationTabs {
