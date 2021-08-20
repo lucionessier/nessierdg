@@ -320,6 +320,10 @@ img {
 
 .homeSocialIcon:hover {
     color: var(--first-color-alt);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
 }
 
 .homeBlob {
@@ -423,6 +427,10 @@ img {
 .button--link:hover {
     background-color: transparent;
     color: var(--first-color);
+}
+
+#message-icon:hover {
+    transform: translateX(.25rem);
 }
 
 
@@ -814,36 +822,6 @@ img {
 .swiper-button-next,
 .swiper-pagination-bullet {
     outline: none;
-}
-
-/* HAVE PROJECTS? SECTION */
-
-.project {
-    text-align: center;
-}
-
-.projectBg {
-    background-color: var(--first-color-second);
-    padding-top: 3rem;
-}
-
-.projectTitle {
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-0-75);
-}
-
-.projectDescription {
-    margin-bottom: var(--mb-1-5);
-}
-
-.projectTitle,
-.projectDescription {
-    color: #FFF;
-}
-
-.projectImg {
-    width: 232px;
-    justify-self: center;
 }
 
 
