@@ -331,9 +331,9 @@ img {
     fill: var(--first-color);
 }
 
-/* Codigo que falta d eminuto 28 y minuto 33 */
+
 .homeBlobImg {
-    width: 170px;
+    width: 180px;
 }
 
 .homeData {
@@ -441,6 +441,19 @@ img {
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+}
+
+.aboutImg:hover {
+    content: url('/assets/img/home-img-2.jpg');
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 .aboutDescription {
@@ -562,7 +575,7 @@ img {
 }
 
 .skillsPhotoshop {
-    width: 30%;
+    width: 90%;
 }
 
 .skillsXD {
@@ -824,6 +837,31 @@ img {
     outline: none;
 }
 
+.gdContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1; 
+    margin: 1rem;
+}
+
+.imgContent {
+    width: 250px;
+    border-radius: .5rem;
+}
+
+.imgContent:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -moz-tranform: scale(1.5);
+    -o-transform: scale(1.5);
+    max-width: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
 
 /* CONTACT */
 
@@ -981,7 +1019,7 @@ img {
     }
 
     .homeBlob {
-        width: 200px;
+        width: 170px;
     }
 
     .skillsTitle {
@@ -1035,6 +1073,31 @@ img {
     .projectContainer,
     .footerContainer {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gdContent {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 2; 
+        margin: 1rem;
+    }
+    
+    .imgContent {
+        width: 250px;
+        border-radius: .5rem;
+    }
+
+    .imgContent:hover {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -moz-tranform: scale(1.5);
+        -o-transform: scale(1.5);
+        max-width: 100%;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
     }
 
     .qualificationSections {
@@ -1106,7 +1169,7 @@ img {
     }
 
     .homeBlob {
-        width: 320px;
+        width: 220px;
     }
 
     .homeScroll {
@@ -1122,7 +1185,20 @@ img {
     }
     
     .aboutImg {
-        width: 350px;
+        width: 250px;
+    }
+
+    .aboutImg:hover {
+        content: url('/assets/img/home-img-2.jpg');
+        filter: gray;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
     }
 
     .aboutDescription {
@@ -1172,6 +1248,31 @@ img {
 
     .portfolioContent {
         align-items: center;
+    }
+
+    .gdContent {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 2; 
+        margin: 1rem;
+    }
+    
+    .imgContent {
+        width: 250px;
+        border-radius: .5rem;
+    }
+
+    .imgContent:hover {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -moz-tranform: scale(1.5);
+        -o-transform: scale(1.5);
+        max-width: 100%;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
     }
 
     .project {
@@ -1228,7 +1329,7 @@ img {
     }
 
     .homeBlob {
-        width: 420px;
+        width: 300px;
     }
 
     .homeSocial {
@@ -1241,6 +1342,31 @@ img {
 
     .portfolioContent {
         column-gap: 5rem;
+    }
+
+    .gdContent {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1; 
+        margin: 1rem;
+    }
+    
+    .imgContent {
+        width: 250px;
+        border-radius: .5rem;
+    }
+
+    .imgContent:hover {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -moz-tranform: scale(1.5);
+        -o-transform: scale(1.5);
+        max-width: 100%;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
     }
 
     .swiper-portfolio-icon {
