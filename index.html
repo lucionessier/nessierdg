@@ -38,6 +38,10 @@
 
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+    <!--ANIMATE ON SCROLL-->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--CSS-->
     
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -124,7 +128,7 @@
                             
                         </div>
 
-                        <div class="homeImg">
+                        <div class="homeImg" data-aos="fade-left" data-aos-duration="300">
                             
                             <svg class="homeBlob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
@@ -170,7 +174,7 @@
 
             <!--ABOUT ME-->
 
-            <section class="about section" id="about">
+            <section class="about section" id="about" data-aos="fade-down" data-aos-duration="500">
                 <h2 class="sectionTitle">About me</h2>
                 <span class="sectionSubTitle">A little bit about my journey</span>
 
@@ -221,7 +225,7 @@
 
             <!--SKILLS-->
             
-            <section class="skills section" id="skills">
+            <section class="skills section" id="skills" data-aos="fade-down" data-aos-duration="500">
                 <h2 class="sectionTitle">Skills</h2>
                 <span class="sectionSubTitle">My technical level</span>
 
@@ -364,7 +368,7 @@
 
             <!-- QUALIFICATIONS-->
 
-            <section class="qualification section">
+            <section class="qualification section" data-aos="fade-down" data-aos-duration="500">
                 <h2 class="sectionTitle">Qualification</h2>
                 <span class="sectionSubTitle">My professional journey</span>
 
@@ -840,7 +844,7 @@
             </section>
             <!--CONTACT ME-->
 
-            <section class="contact section" id="contact">
+            <section class="contact section" id="contact" data-aos="fade-down" data-aos-duration="700">
 
                 <h2 class="sectionTitle">Contact me!</h2>
                 <span class="sectionSubTitle">Let's get in touch</span>
@@ -932,6 +936,13 @@
     <a href="#" class="scrollUp" id="scroll-up">
         <i class="uil uil-arrow-up scrollUpIcon"></i>
     </a>
+
+    <!--AOS-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
     <!--SWIPER JS-->
 
